@@ -1,0 +1,559 @@
+<?php
+session_start();
+?>
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Creative Bakers</title>
+        <!-- for-mobile-apps -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="keywords" content="Baking Responsive web site, Bootstrap Web Bakery, Flat Web Bakers, Android Compatible web site, 
+              Smartphone Compatible web business, e-commerce webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web e-commerce site" />
+        <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+            function hideURLbar(){ window.scrollTo(0,1); } </script>
+        <!-- //for-mobile-apps -->
+        <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+        <!-- Custom Theme files -->
+        <link href="css/style.css" rel='stylesheet' type='text/css' />
+        <link rel="stylesheet" href="css/jquery-ui.css" type='text/css' />
+        <link rel="stylesheet" href="css/smoothbox.css" type='text/css' >
+        <!-- //Custom Theme files -->
+        <!-- js -->
+        <script src="js/jquery.min.js"></script>
+        <!-- //js -->
+        <!--webfont-->
+        <link href='//fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+        <!-- start-smoth-scrolling -->
+        <script type="text/javascript" src="js/move-top.js"></script>
+        <script type="text/javascript" src="js/easing.js"></script>
+        <script type="text/javascript">
+            jQuery(document).ready(function ($) {
+                $(".scroll").click(function (event) {
+                    event.preventDefault();
+                    $('html,body').animate({scrollTop: $(this.hash).offset().top}, 1000);
+                });
+            });
+        </script>
+        <!-- start-smoth-scrolling -->
+
+    </head>
+    <body>
+        <script src="js/jquery.vide.min.js"></script>
+        <div data-vide-bg="video/srix">
+            <div class="center-container">
+                <div class="navigation">
+                    <div class="container">
+                        <div class="logo">
+                            <h1><a href="index.html">Creative Bakers</a></h1>
+                        </div>
+                        <div class="navigation-right">
+                            <span class="menu"><img src="images/menu.png" alt=" " /></span>
+                            <nav class="link-effect-3" id="link-effect-3">
+                                <ul class="nav1 nav nav-wil">
+                                    <li class="active"><a data-hover="Home" href="index.html">Home</a></li>
+                                    <!--<li><a data-hover="About" href="#about" class="scroll">About</a></li>-->
+                                    <li><a data-hover="Register" href="#register" class="scroll">Register</a></li>
+                                    <li><a data-hover="Gallery" href="#gallery" class="scroll">Gallery</a></li>
+                                    <li><a data-hover="Order" href="#order" class="scroll">Order</a></li>
+                                    <li><a data-hover="Contact" href="#contact" class="scroll">Contact</a></li>
+                                    <li><a data-hover="Login" href="#" class="scroll" data-toggle="modal" data-target="#loginModal">Login</a></li>
+                                </ul>
+                            </nav>
+                            <!-- script-for-menu -->
+                            <script>
+            $("span.menu").click(function () {
+                $("ul.nav1").slideToggle(300, function () {
+// Animation complete.
+                });
+            });
+                            </script>
+                            <!-- /script-for-menu -->
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="w3ls_banner_info">
+                    <div class="container">
+                        <div class="w3l_banner_logo">
+                            <h2>CB</h2>
+                        </div>
+                        <h3>Creativity and expertise baked into one.</h3>
+                        <p>Nothing satisfies more than delicious home-made baked foods, made with the customer in mind.</p>
+                        <div class="more">
+                            <a href="#" class="hvr-underline-from-center" data-toggle="modal" data-target="#myModal">Learn More</a>
+                        </div>
+                        <!--modal-video-->
+                        <div class="modal video-modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        Creative Bakers
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+                                    </div>
+                                    <section>
+                                        <div class="modal-body">
+                                            <!--<img src="images/17.jpg" alt=" " class="img-responsive" />-->
+                                            <p>
+                                                Nothing satisfies more than delicious home-made baked foods, 
+                                                made with the customer in mind. You can trust that our confectionaries 
+                                                would take your taste buds on a mouth-watering, belly-filling journey always.
+                                            </p>
+
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                        <!--login modal-->
+                        <div class="modal video-modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModal">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        Login
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+                                    </div>
+                                    <!--<section>-->
+                                    <div class="modal-body">
+                                        <label id='fMsg' class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 label label-danger"></label>
+                                        <label id='sMsg' class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 label label-success"></label>
+                                        <form id="loginForm" action="" method="post" class="form-horizontal">
+                                            <div class="form-group">
+                                                <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                                                    <input name="username" class="form-control" placeholder="*username" type="text" required>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                                                    <input name="password" class="form-control" placeholder="*Password" type="password" required>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                                    <button class="btn btn-primary" type="reset">Cancel</button>
+                                                </div>
+                                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                                    <button id="loginBtn" class="btn btn-success" type="submit">Login</button>
+                                                </div>
+                                            </div>
+                                        </form>
+
+                                        <!--<img src="images/17.jpg" alt=" " class="img-responsive" />-->
+                                    </div>
+                                    <!--</section>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- about -->
+        <!-- //about -->
+        <!-- banner-bottom -->
+        <!-- //banner-bottom -->
+        <!-- banner-bottom-image-text -->
+        <!-- //banner-bottom-image-text -->
+        <!-- register -->
+        <div class="register" id="register">
+            <div class="container">
+                <h3>Register</h3>
+                <?php
+                if (isset($_SESSION['error'])) {
+                    echo "<label id='msg' class='col-sm-12 col-md-10 label label-danger'>$_SESSION[error]</label>";
+                    unset($_SESSION['error']);
+                } elseif (isset($_SESSION['success'])) {
+                    echo "<label id='msg' class='col-sm-12 col-md-10 label label-success'>$_SESSION[success]</label>";
+                    unset($_SESSION['success']);
+                }
+                //unset($_SESSION['success']);
+                ?>
+                <form action="register.php" id="registrationForm" method="post" class="form-horizontal">
+                    <div class="form-group">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input name="surname" class="form-control" placeholder="*Surname" type="text" required>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input name="other_names"  class="form-control" placeholder="*Other names" type="text" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div id="username-available" class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-4 col-xs-12 alert alert-success">
+                            This username is available.
+                        </div>
+                        <div id="username-unavailable" class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-4 col-xs-12 alert alert-warning">
+                            This username is unavailable. Try another one.
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input name="username" id="username" class="form-control" maxlength="20" placeholder="*Create username (e.g john2010)" type="text" required>
+
+                        </div>
+
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input name="password" class="form-control" maxlength="20" placeholder="*Create a password" type="password" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input name="phone" class="form-control" maxlength="20" placeholder="*Phone e.g (+234) 9054 255 222" type="text" required>
+
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input name="email" class="form-control" maxlength="250" placeholder="Email" type="text" >
+
+                        </div>    
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <input name="address" class="form-control " maxlength="250" placeholder="*Address (your order will be delivered here)" type="text" required>
+
+                        </div>    
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-6 col-sm-6 col-xs-6">
+                            <button class="btn btn-primary" type="reset">Cancel</button>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-6">
+                            <button class="btn btn-success" type="submit">Register</button>
+                        </div>
+                    </div>
+<!--<input type="submit" value="Submit">-->
+                </form>
+            </div>
+        </div>
+        <!-- //register -->
+        <!-- register-bottom -->
+        <div class="register-bottom">
+            <div class="container" id="order">
+                <h3>Order</h3>
+                <p>
+                    Place an order for your very own baked foods now.
+                </p>
+                <div class="reservation">
+                    <!--                    <div class="w3_book_date">
+                                            <form action="#" method="post">
+                                                <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+                                                <input class="date" id="datepicker" type="text" name="Date" value="Date" onfocus="this.value = '';" onblur="if (this.value == '') {
+                                                                                this.value = 'Date';
+                                                                            }" required="">
+                                            </form>
+                                        </div>
+                    <div class="w3_working_time">
+                        <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+                        <select id="country1" onchange="change_country(this.value)" class="frm-field required sect">
+                            <option value="null">Time</option>
+                            <option value="null">10:00 AM - 12:00 PM</option> 
+                            <option value="null">02:00 PM - 5:00 PM</option>							
+                        </select>
+                    </div>
+                    <div class="w3_working_time w3_working_time1">
+                        <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+                        <select id="country" onchange="change_country(this.value)" class="frm-field required sect">
+                            <option value="null">Classes</option>
+                            <option value="null">Play Class</option> 
+                            <option value="null">1st Class to 10th Class</option>							
+                        </select>
+                    </div>-->				
+                    <div class="clearfix"> </div>	
+                    <form action="#" method="post" class="form-horizontal">
+                        <div class="form-group">
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <input name="surname" class="form-control" placeholder="*Surname" type="text" required>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <input name="other_names"  class="form-control" placeholder="*Other names" type="text" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <input name="phone" class="form-control" maxlength="20" placeholder="*Phone e.g (+234) 9054 255 222" type="text" required>
+
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <input name="email" class="form-control" maxlength="250" placeholder="Email" type="text" >
+
+                            </div>    
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <input name="address" class="form-control " maxlength="250" placeholder="*Address (your order will be delivered here)" type="text" required>
+
+                            </div>    
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <select name="product" class="form-control" required>
+                                    <option value="">*select a product</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <input name="qty" class="form-control" placeholder="Qty" type="number" >
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                <button class="btn btn-primary" type="reset">Cancel</button>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                <button class="btn btn-success" type="submit">Register</button>
+                            </div>
+                        </div>
+                            <!--<input type="submit" value="Submit">-->
+                    </form>
+
+
+                </div>
+                <!-- start-date-piker -->
+                <script src="js/jquery-ui.js"></script>
+                <script>
+            $(function () {
+                $("#datepicker").datepicker();
+            });
+                </script>
+                <!-- //End-date-piker -->
+            </div>
+        </div>
+        <!-- //team-bottom -->
+        <!-- gallery -->
+        <div class="gallery" id="gallery">
+            <h3>Photo Gallery <small>coming soon</small></h3>
+            <p class="nostrud">some photos of our creative baked foods</p>
+            <div class="w3agile_gallery_grids">
+                <!--<div class="col-md-3 w3agile_gallery_grid">
+                    <div class="w3agile_gallery_image">
+                        <a class="sb" href="images/8.jpg" title="quis nostrud exercitation ullamco laboris quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum">
+                            <figure>
+                                <img src="images/8.jpg" alt="" class="img-responsive" />
+                                <figcaption>
+                                    <h4>dolore magna aliqua</h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua.
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 w3agile_gallery_grid">
+                    <div class="w3agile_gallery_image">
+                        <a class="sb" title="quis nostrud exercitation ullamco laboris quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum" href="images/9.jpg">
+                            <figure>
+                                <img src="images/9.jpg" alt="" class="img-responsive" />
+                                <figcaption>
+                                    <h4>dolore magna aliqua</h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua.
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 w3agile_gallery_grid">
+                    <div class="w3agile_gallery_image">
+                        <a class="sb" title="quis nostrud exercitation ullamco laboris quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum" href="images/10.jpg">
+                            <figure>
+                                <img src="images/10.jpg" alt="" class="img-responsive" />
+                                <figcaption>
+                                    <h4>dolore magna aliqua</h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua.
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 w3agile_gallery_grid">
+                    <div class="w3agile_gallery_image">
+                        <a class="sb" title="quis nostrud exercitation ullamco laboris quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum" href="images/11.jpg">
+                            <figure>
+                                <img src="images/11.jpg" alt="" class="img-responsive" />
+                                <figcaption>
+                                    <h4>dolore magna aliqua</h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua.
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </div>
+                -->
+                <div class="clearfix"> </div>
+            </div>
+            <script type="text/javascript" src="js/smoothbox.jquery2.js"></script>
+        </div>
+        <!-- //gallery -->
+        <!-- testimonials 
+        <div class="testimonials">
+            <div class="container">
+                <h3>Testimonials</h3>
+                <p class="nostrud">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+                <div class="testimonials-grids">
+                    <div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+                        <ul id="myTab" class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Joy Allen</a></li>
+                            <li role="presentation"><a href="#carl" role="tab" id="carl-tab" data-toggle="tab" aria-controls="carl">Chris Lii</a></li>
+                            <li role="presentation"><a href="#james" role="tab" id="james-tab" data-toggle="tab" aria-controls="james">Allen Rosy</a></li>
+                        </ul>
+                        <div id="myTabContent" class="tab-content">
+                            <div role="tabpanel" class="tab-pane fade in active" id="home" aria-labelledby="home-tab">
+                                <div class="tabcontent-grids">
+                                    <img src="images/2.png" alt=" " class="img-responsive" />
+                                    <h4>Joy Allen<span>Head Master</span></h4>
+                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse 
+                                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+                                        cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+                                        anim id est laborum.</p>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="carl" aria-labelledby="carl-tab">
+                                <div class="tabcontent-grids">
+                                    <img src="images/3.png" alt=" " class="img-responsive" />
+                                    <h4>Chris Lii<span>Teacher</span></h4>
+                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse 
+                                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+                                        cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+                                        anim id est laborum.</p>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="james" aria-labelledby="james-tab">
+                                <div class="tabcontent-grids">
+                                    <img src="images/4.png" alt=" " class="img-responsive" />
+                                    <h4>Allen Rosy<span>Teacher</span></h4>
+                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse 
+                                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+                                        cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+                                        anim id est laborum.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        //testimonials -->
+        <!-- contact -->
+        <div class="contact" id="contact">
+            <div class="col-md-6 w3agile_contact_left">
+                <h3>Contact Us</h3>
+                <p>
+                    We would love to get feed back from you to help us serve you better. Comments, questions, suggestions and the like are 
+                    very much welcomed.
+                </p>
+                <form action="#" method="post">
+                    <input type="text" name="Name" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {
+                                this.value = 'Name';
+                            }" required="">
+                    <input type="email" name="Email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {
+                                this.value = 'Email';
+                            }" required="">
+                    <textarea name="Message" onfocus="this.value = '';" onblur="if (this.value == '') {
+                                this.value = 'Message...';
+                            }" required="">Message...</textarea>
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+            <div class="col-md-6 w3agile_contact_right">
+                <h3><a href="index.html">Creative Bakers</a></h3>
+                <div class="col-xs-6 w3agile_contact_right_agileinfo">
+                    <h4>Address</h4>
+                    <p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>Dutse, Abuja.</p>
+                    <p><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>(+234) 8130 54 6010</p>
+                    <!--<p><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><a href="mailto:info@example.com">info@example.com</a></p>-->
+                </div>
+                <div class="col-xs-6 w3agile_contact_right_agileinfo">
+                    <!--                    <h4>Follow Us</h4>
+                                        <div class="agileits_social_icons">
+                                            <a href="#" class="icon-button twitter"><i class="icon-twitter"></i><span></span></a>
+                                            <a href="#" class="icon-button facebook"><i class="icon-facebook"></i><span></span></a>
+                                            <a href="#" class="icon-button google-plus"><i class="icon-google-plus"></i><span></span></a>
+                                        </div>-->
+                </div>
+                <div class="clearfix"> </div>
+                <div class="w3_copy_right">
+                    <p>© 2016 Creative Bakers. All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>
+                </div>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        <!-- //contact -->
+        <!-- for bootstrap working -->
+        <script src="js/bootstrap.js"></script>
+        <!-- //for bootstrap working -->
+        <!-- here stars scrolling icon -->
+        <script type="text/javascript">
+                        $(document).ready(function () {
+                            /*
+                             var defaults = {
+                             containerID: 'toTop', // fading element id
+                             containerHoverID: 'toTopHover', // fading element hover id
+                             scrollSpeed: 1200,
+                             easingType: 'linear' 
+                             };
+                             */
+
+                            //$().UItoTop({easingType: 'easeOutQuart'});
+                            $("form#loginForm").submit(function(e){
+                                e.preventDefault();
+                            });
+                            // check username
+                            $("#username-available").hide();
+                            $("#username-unavailable").hide();
+                            $("#username").blur(function () {
+                                var data = $("#registrationForm").serializeArray();
+                                $.post("check.php", data, function (json) {
+                                    if (json.status === "success") {
+                                        $("#username-available").show();
+                                    } else {
+                                        $("#username-unavailable").show();
+                                    }
+                                }, "json");
+                            });
+                            // remove previous availability status
+                            $("#username").click(function () {
+                                $("#username-available").hide();
+                                $("#username-unavailable").hide();
+                            });
+                            
+                            $("#loginBtn").click(function(e){
+                                e.preventDefault();
+                                var data = $("#loginForm").serializeArray();
+                                $.post("login.php", data, function (json) {
+                                    if(json.status === "success"){
+                                        $("#sMsg").empty();
+                                        $("#fMsg").empty();
+                                        $("#sMsg").append(json.message);
+                                        window.location.href = 'dashboard/index.php';
+                                    }else{
+                                        $("#sMsg").empty();
+                                        $("#fMsg").empty();
+                                        $("#fMsg").append(json.message);
+                                    }
+                                }, "json");
+                            });
+
+                        });
+        </script>
+        <!-- //here ends scrolling icon -->
+    </body>
+</html>
